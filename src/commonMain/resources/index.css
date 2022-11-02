@@ -1,0 +1,219 @@
+:root {
+    --primary-color: rgba(0, 0, 0, 0.849);
+    --secound-color: rgba(68, 68, 68, 0.774);
+    --third-color: rgba(243, 166, 24, 0.815);
+}
+body {
+    background-color: var(--primary-color);
+    /*background-color: mediumspringgreen;*/
+    color: white;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    color: var(--third-color);
+    margin: 30px 0px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secound-color);
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 30px;
+}
+.video-info {
+    display: flex;
+    gap: 30px;
+}
+.video-title {
+    color: var(--third-color);
+}
+.video-list {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.video-list-item {
+    background-color: var(--third-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+input, select {
+    padding: 9px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(105, 105, 105, 0.5);
+    margin: 8px;
+}
+.input-search {
+    width: 650px;
+    margin: 30px;
+    border-radius: 5px;
+}
+.videos-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.card-videos-list {
+    padding: 30px;
+    background-color: var(--secound-color);
+    margin: 30px 0px;
+    border-radius: 10px;
+    width: 500px;
+    overflow-y: auto;
+    min-height: 150px;
+}
+.card-videos-list::-webkit-scrollbar {
+    width: 10px;
+}
+.card-videos-list::-webkit-scrollbar-thumb {
+    background-color: var(--third-color);
+    border-radius: 5px;
+}
+
+.header-videos-list {
+    display: flex;
+    margin-bottom: 10px;
+}
+.header-title {
+    width: 100%;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+button {
+    margin: 3px;
+    border-radius: 3px;
+    padding: 6px 8px;
+    border: none;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+button span {
+    display: none;
+    margin-left: 5px;
+}
+
+.btn-addVideo {
+    background-color: crimson;
+    color: white;
+}
+button:hover span {
+    display: block;
+}
+.btn-addCategory {
+    background-color: rgba(18, 247, 18, 0.63);
+    color: white;
+}
+.btn-addAuthor {
+    background-color: rgba(47, 47, 255, 0.76);
+    color: white;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 66%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 700px;
+    border-radius: 5px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+.modal-header {
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.div-btn-close {
+    display: flex;
+    justify-content: end;
+}
+.btn-close {
+    background: none;
+    border: none;
+}
+.show {
+    display: block;
+}
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.btn-secondary {
+    background-color: crimson;
+    color: white;
+}
+.btn-primary {
+    background-color: rgb(0 143 0);
+    color: white;
+}
+.div-select {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+select {
+    width: 180px;
+}
+.videos-list p {
+    cursor: pointer;
+}
+.videos-list p:hover {
+    background-color: rgba(243, 166, 24, 0.61);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+}
