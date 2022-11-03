@@ -29,7 +29,7 @@ fun Application.configureRouting() {
                 ContentType.Text.Html
             )
         }
-        static("/static") {
+        static("/") {
             resources()
         }
 
