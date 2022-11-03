@@ -9,6 +9,6 @@ Para la persistencia de datos, utiliza postgresql y la libreria exposed una bibl
 ## Front-end
 El front-end de videoKotlin esta construida usando react. Para adaptar las APIs de React a Kotlin, incorpora un conjunto de wrappers.
 
-###Ejecucion
+### Ejecucion
 Para iniciar la aplicacion y ver que todo funciona, ejecuta la tarea Gradle ``run``.
 Puuede usar el comando ``./gradlew run`` en la terminal o ejecutar desde la ventana de herramienta Gradle
