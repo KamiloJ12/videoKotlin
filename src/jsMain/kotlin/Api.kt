@@ -50,7 +50,6 @@ suspend fun addVideo(video: Video) {
         setBody(video)
     }
 }
-
 suspend fun updateWatchVideo(video: Video) {
     jsonClient.put(endpoint + Video.path){
         contentType(ContentType.Application.Json)

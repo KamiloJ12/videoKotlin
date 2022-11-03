@@ -43,16 +43,17 @@ val ModalAddVideo = FC<ModalAddVideoProps> {props ->
 
     val submitHandler: FormEventHandler<HTMLFormElement> = { it ->
         it.preventDefault()
-        println("Author: " + author)
-        println("Language: " + language)
-        println("Categories: " + categories)
-        println("title: " + title)
-        println("videoURL: " + videoUrl)
-        println("year: " + year)
 
         val languageSelect = props.languages.find{ l -> l.id == language.toInt() }
         val authorSelect = props.authors.find{ a -> a.id == author.toInt() }
         val categoriesSelect = props.categories.filter{ c -> categories.contains( c.id.toString() ) }
+
+        setAuthor("")
+        setLanguage("")
+        setCategories(emptyList<String>())
+        setTitle("")
+        setVideoUrl("")
+        setYear("")
 
         props.onSubmit(
             Video (

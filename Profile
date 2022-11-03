@@ -1,1 +1,1 @@
-web: ./build/install/videos/bin/videos
+web: build/install/videos/bin/videos
