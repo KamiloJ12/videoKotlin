@@ -34,8 +34,8 @@ external interface ModalAddVideoProps : Props {
 
 val ModalAddVideo = FC<ModalAddVideoProps> {props ->
 
-    val (author, setAuthor)  = useState("")
-    val (language, setLanguage)  = useState("")
+    val (author, setAuthor)  = useState("1")
+    val (language, setLanguage)  = useState("2")
     val (categories, setCategories) = useState(emptyList<String>())
     val (title, setTitle)  = useState("")
     val (videoUrl, setVideoUrl)  = useState("")
@@ -54,6 +54,8 @@ val ModalAddVideo = FC<ModalAddVideoProps> {props ->
         setTitle("")
         setVideoUrl("")
         setYear("")
+
+        window.alert("add video")
 
         props.onSubmit(
             Video (
@@ -162,7 +164,6 @@ val ModalAddVideo = FC<ModalAddVideoProps> {props ->
                                 onChange = changeHandlerAuthor
                                 value = author
                                 for(authorProp in props.authors){
-
                                     option {
                                         value = authorProp.id.toString()
                                         +"${authorProp.fullName}"

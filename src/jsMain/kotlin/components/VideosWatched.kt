@@ -33,7 +33,7 @@ val VideosWatched = FC<VideosWatchedProps> {props ->
 
                 p {
                     css {
-                        if(video == props.selectedVideo) {
+                        if(video.id == props.selectedVideo?.id) {
                             backgroundColor = rgba(243, 166, 24, 0.815)
                             borderRadius = 5.px
                             padding = 10.px

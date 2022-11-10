@@ -21,7 +21,7 @@ fun Route.videosRouting(videoRepository: VideoRepository) {
         }
         put {
             val params = call.receive<Video>()
-            val result = videoRepository.addVideo(params)
+            videoRepository.changeWacthVideo(params)
             call.respond(HttpStatusCode.Created)
         }
     }

@@ -39,7 +39,7 @@ class VideoServiceImpl : VideoService {
             VideoTable.update({
                 VideoTable.id eq video.id
             }){
-                it[VideoTable.watched] = !video.watched
+                it[VideoTable.watched] = video.watched
             }
         }
 
